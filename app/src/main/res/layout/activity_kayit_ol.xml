@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/koyuyesil"
+    tools:context=".KayitOl">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/koyuyesil"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <LinearLayout
+            android:id="@+id/firstLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/birHesabınYokmu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="80dp"
+                android:text="@string/hesabin_yokmu"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/hesapOlustur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:text="@string/hesap_olustur"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+
+
+                <EditText
+                    android:id="@+id/isim"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:autofillHints=""
+                    android:background="@drawable/kayitol_background_edit"
+                    android:hint="İsim Soyisim"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:padding="15dp"
+                    app:layout_constraintTop_toBottomOf="@+id/firstLinearLayout"
+                    tools:ignore="TextContrastCheck" />
+
+
+
+
+            <EditText
+                android:id="@+id/epostaKayit"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:autofillHints=""
+                android:background="@drawable/kayitol_background_edit"
+                android:hint="Kullanici Adi"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:padding="15dp"
+                tools:ignore="TextContrastCheck" />
+
+            <EditText
+                android:id="@+id/parolaKayit"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:autofillHints=""
+                android:background="@drawable/kayitol_background_edit"
+                android:hint="@string/parola"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                android:padding="15dp"
+                tools:ignore="TextContrastCheck" />
+
+            <EditText
+                android:id="@+id/telefonNumarasıkayit"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:autofillHints=""
+                android:background="@drawable/kayitol_background_edit"
+                android:digits="0123456789"
+                android:hint="@string/telefonNumarasi"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:minHeight="48dp"
+                android:padding="15dp" />
+
+
+
+            <Button
+                android:id="@+id/btnUyeOl"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/girissayfasigirisyapbtnedit"
+                android:text="@string/btnUyeOl"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                tools:ignore="VisualLintButtonSize" />
+
+            <Button
+                android:id="@+id/btnGirisSayfasinaDon"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:background="@color/black"
+                android:text="@string/btnGirisSayfasinaDon"
+                android:textAlignment="center"
+                android:textColor="#3F51B5"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:ignore="VisualLintButtonSize" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
